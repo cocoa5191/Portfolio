@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  *,
+  *:after,
+  *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: "prophet-bold";
+    src: url(../font/ABCProphetEdu-.woff);
+
+  }
+  @font-face {
+    font-family: "prophet-R";
+    src: url(../font/ABCProphetEdu-Regular.woff);
+
+  }
+
+
+  @font-face {
+    font-family: "prophet-I";
+    src: url(../font/ABCProphetEdu-RegularItalic.woff);
+
+  }
+
+body{
+    font-family: "prophet-R";
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+ 
+}
+
+.container{
+  top: 2.2rem;
+  position: relative;
+  overflow-x: visible;
+  
+}
+
+.main{
+    width: 100%;
+    height: 85vw;
+    position: relative;
+    overflow-y: scroll;
+    
+}
+.contents{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#eng{
+    font-family: "prophet-bold";
+    text-decoration-line: none;
+    color: black;
+    background-color:white;
+    transition: all ease 0.3s;    
+    z-index: 100 !important;
+    transform: translateZ(100px);
+    padding: 0.5rem 1rem;
+    border-bottom: 1.8px solid black;
+    padding-bottom: 3px;
+    padding-left: 11px;
+    padding-right: 10px;
+    position: fixed;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2.3rem;
+    width: 100vw;
+    float: left;
+    justify-content: space-between;
+
+}
+
+#eng:hover {
+    font-size: 1.7rem;
+    transition: all ease 0.3s;
+    padding: 0.4vw;
+}
+
+.contents ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.contents li{
+  justify-self: end;
+
+}
+
+.contents img{
+  width: 75vw;
+  margin-bottom: 0.25rem;
+  pointer-events: none;
+}
+
+.pj-img{
+   
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    margin: 0;
+}
+.video video{
+    width: 75vw; 
+    height: auto;
+
+}
+
+
+.pj-text{
+  border-right: black 2px solid;
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+  font-size: 1.1rem;
+  display: block;
+  grid-template-columns: 1fr;
+  line-height: 120%;
+  padding: 0 1vw;
+}
+
+.pj-name{
+    font-size: 1.2rem;
+    margin-top: 2vw;
+}
+
+.pj-info{
+    margin-top: 2rem;
+}
+.pj-add{
+    font-family: "prophet-I";
+    margin-top: 2rem;
+    
+}
+
+@media all and (max-width:875px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fe 100px 100px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "side"
+        "footer";
+    }
+}
+
+
+
+
+
+  
+  /* .dots-container {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease 0.3s;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+   */
+
+  
