@@ -163,13 +163,15 @@ li{
 }
 
 #hdim{
-  height:150vw;
+  height:157vw;
 }
 #trex{
   height: 170vw;
 }
 
-
+.hdif{
+  z-index: 10;
+}
 
 
 
