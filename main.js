@@ -78,6 +78,7 @@ function clickTouchHandler() {
 }
 
 const leftBar = document.querySelector('.left-bar');
+const direction = document.querySelector('.direction');
 const thirdOfPageWidth = window.innerWidth /3;
 const right = window.innerWidth /3;
 
@@ -89,6 +90,16 @@ const right = window.innerWidth /3;
 //   }
 // });
 
+document.addEventListener('mousemove', function(event) {
+  
+  if (event.clientX < thirdOfPageWidth) {
+    direction.classList.remove('hidden');
+  } else if ( event.clientX > right) {
+    direction.classList.add('hidden');
+  } }
+
+);
+
 document.addEventListener('click', function(event) {
   
   if (event.clientX < thirdOfPageWidth) {
@@ -97,8 +108,12 @@ document.addEventListener('click', function(event) {
     leftBar.classList.add('open');
   }
 
-
   }
+
+
+
+
+  
 );
 
 

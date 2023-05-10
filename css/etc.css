@@ -25,16 +25,19 @@
 
 
   @font-face {
-    font-family: "prophet-I";
-    src: url(../font/ABCProphetEdu-RegularItalic.woff);
+    font-family: "abc";
+    src: url(../font/ABCFavoritEdu-Light.otf);
 
   }
 
   body{
     position: relative;
+    font-family: "abc";
   }
 
   #eng{
+    position:absolute;
+    top:0%;
     font-family: "prophet-bold";
     text-decoration-line: none;
     color: black;
@@ -65,7 +68,7 @@
 
 .p-info{
   padding-left: 11px;
-  font-family: "prophet-R";
+  font-family: "abc";
   font-size: 1.2rem;
   top:2vw;
   position: relative;
@@ -87,11 +90,65 @@
   width: 30vw;
   height: auto;
   left: 11px;
+  margin: 3.3vw;
+  margin-left: 0;
   position: relative;
   border-radius: 3%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);;
 }
-.web{
+.wrap{
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.wrap .game{
+  width: 30vw;
+  top: 27vw;
+  left: 2vw;
+}
+
+.p-photo{
+  position: absolute;
+  margin: 0;
+  top: 90%;
+}
+
+.p-photo2{
+  position: absolute;
+  margin: 0;
+  top: 85%;
+  left: 67%;
+}
+#p-photo{
+  margin: 0;
+  width: 20vw;
+}
+
+#p-photo2{
+  width: 17vw;
+}
+#plakat-gif{
+  width: 42vw;
+  height: auto;
+  margin-left: 3vw;
+}
+
+#plakat1 {
+justify-content: center;
+}
+
+#plakat2{
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+#o-plakat{
+  width: 22vw;
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }

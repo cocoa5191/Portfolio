@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "bookk";
-    src: url(../font/부크크명조_얇은글씨.ttf);
+    src: url(../font/bookk.ttf);
     font-style: normal;
     font-display: swap;
     
@@ -155,6 +155,29 @@
   }
 .l-txt{
   font-size: 1.3vw;
+}
+
+.direction{
+  width: 2vw;
+  height: auto;
+  transition: all ease 0.3s;
+}
+
+.direction .hidden{
+  display: none;
+  transition: all ease 0.3s;
+}
+
+#direction{
+  position: absolute; 
+  top: 43vh;
+  left: -2vw;
+}
+
+#direction2{
+  position: absolute; 
+  top: vw;
+  left: -2vw;
 }
 
 summary{
