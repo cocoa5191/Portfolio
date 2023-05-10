@@ -158,6 +158,10 @@ li{
   padding: 0;
 }
 
+.y{
+  background-color: rgb(255, 215, 0);
+}
+
 #hdim{
   height:150vw;
 }
