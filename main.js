@@ -79,7 +79,8 @@ function clickTouchHandler() {
 
 const leftBar = document.querySelector('.left-bar');
 const direction = document.querySelector('.direction');
-const thirdOfPageWidth = window.innerWidth /3;
+const thirdOfPageWidth = window.innerWidth/3;
+const halfOfPageWidth = window.innerWidth/2;
 const right = window.innerWidth /3;
 
 // document.addEventListener('mousemove', function(event) {
@@ -92,7 +93,7 @@ const right = window.innerWidth /3;
 
 document.addEventListener('mousemove', function(event) {
   
-  if (event.clientX < thirdOfPageWidth) {
+  if (event.clientX < halfOfPageWidth) {
     direction.classList.remove('hidden');
   } else if ( event.clientX > right) {
     direction.classList.add('hidden');
@@ -102,7 +103,7 @@ document.addEventListener('mousemove', function(event) {
 
 document.addEventListener('click', function(event) {
   
-  if (event.clientX < thirdOfPageWidth) {
+  if (event.clientX < halfOfPageWidth) {
     leftBar.classList.remove('open');
   } else if ( event.clientX > right) {
     leftBar.classList.add('open');
