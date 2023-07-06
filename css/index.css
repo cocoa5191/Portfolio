@@ -158,7 +158,7 @@
 }
 
 .direction{
-  width: 2vw;
+  width: 6vw;
   height: auto;
   transition: all ease 0.3s;
 }
@@ -170,13 +170,7 @@
 
 #direction{
   position: absolute; 
-  top: 43vh;
-  left: -2vw;
-}
-
-#direction2{
-  position: absolute; 
-  top: vw;
+  top: 3vh;
   left: -2vw;
 }
 
