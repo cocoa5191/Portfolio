@@ -161,7 +161,9 @@ li{
 .y{
   background-color: rgb(255, 215, 0);
 }
-
+.black{
+  background-color: black;
+}
 #hdim{
   height:157vw;
 }
